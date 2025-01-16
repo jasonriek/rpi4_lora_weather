@@ -1,0 +1,62 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+/* Title Styling */
+h1 {
+    color: #e1e1e1;
+    margin-bottom: 20px;
+}
+
+/* Data Container Styling */
+#data {
+    width: 80%;
+    height: 200px;
+    overflow-y: scroll;
+    background: #2b2b40;
+    border: 1px solid #3a3a50;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #565671 #2b2b40; /* For Firefox */
+}
+
+/* Scrollbar Styling for Webkit Browsers */
+#data::-webkit-scrollbar {
+    width: 8px;
+}
+
+#data::-webkit-scrollbar-track {
+    background: #2b2b40;
+}
+
+#data::-webkit-scrollbar-thumb {
+    background-color: #565671;
+    border-radius: 10px;
+}
+
+/* Data Row Styling */
+#data div:nth-child(odd) {
+    background-color: #33334d;
+}
+
+#data div:nth-child(even) {
+    background-color: #2b2b40;
+}
+
+#data div {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 2px 0;
+}
